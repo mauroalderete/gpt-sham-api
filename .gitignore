@@ -105,3 +105,6 @@ typings/
 .tmp
 out
 doc
+
+# Output
+dist
