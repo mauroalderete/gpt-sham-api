@@ -1,101 +1,73 @@
-# coding-projects-template
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
 
-<h4 align="center">Template to coding projects that requires a conventional workflow</h4>
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-&nbsp;
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-<div align="center">
+## Description
 
-<a href="./LICENSE">
-	<img alt="License: MIT" src="https://img.shields.io/badge/License-Private-yellow.svg">
-</a>
-<a href="./CODE_OF_CONDUCT.md">
-	<img alt="Contributor covenant: 2.1" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg">
-</a>
-<a href="https://semver.org/">
-	<img alt="Semantic Versioning: 2.0.0" src="https://img.shields.io/badge/Semantic--Versioning-2.0.0-a05f79?logo=semantic-release&logoColor=f97ff0">
-</a>
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-[![Tests](https://github.com/mauroalderete/coding-projects-template/actions/workflows/tests.yml/badge.svg)](https://github.com/mauroalderete/coding-projects-template/actions/workflows/tests.yml)
-[![CodeQL](https://github.com/mauroalderete/coding-projects-template/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/mauroalderete/coding-projects-template/actions/workflows/codeql-analysis.yml)
+## Installation
 
-<a href="./issues/new/choose">Report Bug</a>
-·
-<a href="./issues/new/choose">Request Feature</a>
+```bash
+$ npm install
+```
 
-<a href="https://twitter.com/intent/tweet?text=👋%20Check%20this%20amazing%20repo%20https://github.com/mauroalderete/coding-projects-template,%20created%20by%20@_mauroalderete%0A%0A%23DEVCommunity%20%23100DaysOfCode%20%23Golang%20%23gcode">
-	<img src="https://img.shields.io/twitter/url?label=Share%20on%20Twitter&style=social&url=https%3A%2F%2Fgithub.com%2Fatapas%2Fmodel-repo">
-</a>
+## Running the app
 
-</div>
+```bash
+# development
+$ npm run start
 
-&nbsp;
-# :wave: Introducing `coding-projects-templates
-This repository template contains the essential elements used in various projects to many stacks.
+# watch mode
+$ npm run start:dev
 
-- Includes workflows to handle labeling, versioning, testing
-- Contains a private license, a basic contributing redaction, and a covenant code of conduct.
-- Implements a definition to generate release notes.
-- Defines templates to the three issues types (bug, proposal, question) and a pull request template.
-- Additional prepare a dependabot script.
-- Schedule a CodeQL Analysis.
+# production mode
+$ npm run start:prod
+```
 
-> Many of the configuration files in this repository are not working yet. Just consist of a sample definition of the configuration. You may adapt these files depending on your objectives. You should pay attention to subsequent indications to know how you do it.
+## Test
 
-# :fire: How to use this template
+```bash
+# unit tests
+$ npm run test
 
-To use this template, click the button **Use this template** shown in the upper section on [root of repository](https://github.com/mauroalderete/coding-projects-template), then create a new repository.
+# e2e tests
+$ npm run test:e2e
 
-Another way is initing the process of creating a new repository and selecting this template in the upper section.
+# test coverage
+$ npm run test:cov
+```
 
-# :building_construction: How to Set up
+## Support
 
-This template contains many files. A lot of them require special attention.
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## CodeQL
+## Stay in touch
 
-`/.github/workflows/codeql-analysis.yml`
-
-This file enables the CodeQL service provided by GitHub. You should provide a language supported.
-If your project is not supported, I recommend removing this yaml file.
-
-## Code of conduct
-
-`/CODE_OF_CONDUCT.md`
-
-This code is based on the covenant code. He is only required to specify an email address to the community to send his messages. Now, this email is alderete.mauro@gmail.com.
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
-`/LICENSE`
-
-This license is a private personal license redacted by chatGPT. This is only an example. I recommend changing this license to other than to be attached better to your needs.
-You can replace it with any Open License offered by GitHub, too.
-
-## Tests
-
-`/.github/workflows/tests.yml`
-
-This workflow is the most complex to configure. This depends highly on your stack and environment.
-In some cases, you will probably need to split this workflow into unit and integration tests.
-It only contains some steps with a simple message showing you the commands to configure a node test environment.
-
-I recommend you study your case carefully.
-
-## Versioning
-
-`/.github/workflows/versioning.yml`
-
-The versioning workflow contains the commands to generate a new release. This release could be attached with a binary file result from them of your project's build.
-
-The file shows you a simple build step and package.
-
-## Gitignore
-
-`/.gitignore`
-
-This file is empty. Replace the content with what you think is more convenient.
-
-## Others
-
-The rest of the files usually don't require modifications. Implements defaults and typical workflows.
+Nest is [MIT licensed](LICENSE).
