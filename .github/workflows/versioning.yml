@@ -3,7 +3,7 @@ name: Versioning
 on:
   push:
     branches:
-      - "main"
+      - 'main'
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -34,6 +34,22 @@ jobs:
           minorList: FEATURE, Feature, feature, FEAT, Feat, feat
           patchList: FIX, Fix, fix, FIXED, Fixed, fixed, config, conf, cofiguration, configure, build, rebuild, doc, docu, document, documentation, dependencies, dependencie, depends, deps, dep, build(deps), build(deps-dev)
           patchAll: false
+
+      - name: Setup Git
+        id: setup-git
+        run: |
+          #!/bin/sh
+          git config --global user.email "development.team@novafuria.com"
+          git config --global user.name "Development Team"
+
+      - name: Update package.json version number
+        id: update-package
+        run: |
+          #!/bin/sh
+          tmp=$(mktemp)
+          jq --arg version "${{ steps.semver.outputs.nextStrict }}" '.version=$version' package.json > "$tmp" && mv "$tmp" package.json
+          git commit --amend --no-edit package.json
+          git push --force-with-lease
 
       - name: Push tags
         id: push-tags
